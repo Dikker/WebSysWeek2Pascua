@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 1.2rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        header img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+        }
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #4CAF50;
+        }
+        .content {
+            max-width: 850px;
+            margin: 2.5rem auto;
+            padding: 2.5rem;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+            border: 1px solid #e0e0e0;
+        }
+        h2 {
+            margin-bottom: 1.2rem;
+            color: #222;
+            font-size: 2rem;
+            text-align: center;
+            letter-spacing: 0.5px;
+        }
+        p {
+            margin-bottom: 1.7rem;
+            font-size: 1.13rem;
+            line-height: 1.85;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.7rem;
+        }
+        li {
+            margin-bottom: 0.8rem;
+            font-size: 1.13rem;
+        }
+        ol a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        ol a:hover {
+            text-decoration: underline;
+        }
+        .about-section {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .about-section img {
+            width: 200px;
+            height: 200px;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+        .contact-info {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-left: 4px solid #222;
+            margin-top: 1.5rem;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 2.5rem;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="prof1.png" alt="Profile Picture">
+        <h1>Benedict T. Pascua</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#websites">Favorite Websites</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="content">
+        <h2>About Me</h2>
+        <div class="about-section" id="about">
+            <img src="prof2.png" alt="Benedict Pascua">
+            <div>
+                <h2 style="text-align: left; font-size: 1.5rem; margin-bottom: 1rem;">BSIT-MWA | 2nd Year</h2>
+                <p>I am a student at National University—Manila studying Bachelor of Science in Information Technology, specializing in Mobile and Web Applications.</p>
+                <p>I have been in the IT field since Senior High School and have been learning to program and develop since then. I seek opportunities to further expand my knowledge about programming and desire to be a part of the world's technological advancement.</p>
+                <p>I want to pursue IT because I am passionate about how technology works and to contribute to its ongoing development.</p>
+            </div>
+        </div>
+
+        <h2 id="hobbies">My Hobbies</h2>
+        <ul>
+            <li>Practice Software Development</li>
+            <li>Sports</li>
+            <li>Gaming</li>
+            <li>Learning new technologies</li>
+        </ul>
+
+        <h2 id="websites">Favorite Websites</h2>
+        <ol>
+            <li><a href="https://pkmnquiz.com">Pokemon Quiz</a></li>
+            <li><a href="https://pokemonshowdown.com">Pokemon Showdown</a></li>
+            <li><a href="https://pokemondb.net">Pokemon Database</a></li>
+        </ol>
+
+        <h2 id="contact">Contact</h2>
+        <div class="contact-info">
+            <p><strong>Email:</strong> benedictpascua05@gmail.com</p>
+            <p><strong>Phone:</strong> +63 966 9580 234</p>
+            <p><strong>Location:</strong> Manila, Philippines</p>
+            <p><strong>Github:</strong> <a href="https://github.com/Dikker" target="_blank">My Github Profile</a></p>
+        </div>
+    </div>
+
+    <footer>™ I like turtles</footer>
+</body>
+</html>
